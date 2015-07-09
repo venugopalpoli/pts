@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>JQuery</title>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+<script type="text/javascript"> 
+function AppendItemsToList() 
+{ 
+        var item1 = $("<li></li>").text("Item 1"); 
+        var item2 = "<li>Item 2</li>"; 
+        var item3 = document.createElement("li"); 
+        item3.innerHTML = "Item 3"; 
+         
+        $("#olTestList2").append(item1, item2, item3); 
+} 
+</script>
+</head>
+<body>
+<a href="javascript:void(0);" onclick="AppendItemsToList();">Append items</a>    
+<ol id="olTestList2"></ol> 
+</body>
+</html>

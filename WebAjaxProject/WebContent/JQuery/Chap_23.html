@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>JQuery</title>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+<script type="text/javascript"> 
+$(function() 
+{ 
+        $("p").text(function(index, oldText) { 
+                return "Existing text: " + oldText + ". New text: A dynamically set text (#" + index + ")"; 
+        }); 
+}); 
+</script>
+</head>
+<body>
+<p>Paragraph 1</p> 
+<p>Paragraph 2</p> 
+<p>Paragraph 3</p> 
+</body>
+</html>

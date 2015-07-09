@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>JQuery</title>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+<script type="text/javascript"> 
+function ShowBoxes() 
+{ 
+        $("#divTestArea21").fadeIn("fast"); 
+        $("#divTestArea22").fadeIn("slow"); 
+        $("#divTestArea23").fadeIn(2000); 
+		
+		$("#divTestArea24").fadeOut(2000); 
+} 
+</script>
+</head>
+<body>
+<div id="divTestArea21" style="width: 50px; height: 50px; display: none; background-color: #89BC38;"></div> 
+<div id="divTestArea22" style="width: 50px; height: 50px; display: none; background-color: #C3D1DF;"></div> 
+<div id="divTestArea23" style="width: 50px; height: 50px; display: none; background-color: #9966FF;"></div> 
+<div id="divTestArea24" style="width: 50px; height: 50px; background-color: #9966DD;"></div> 
+<a href="javascript:void(0);" onclick="ShowBoxes();">Show boxes</a> 
+
+
+</body>
+</html>

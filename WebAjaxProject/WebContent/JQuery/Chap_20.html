@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>JQuery</title>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+<script type="text/javascript"> 
+$(function() 
+{ 
+        alert("Text: " + $("#divTest").text()); 
+        alert("HTML: " + $("#divTest").html()); 
+        alert("Value: " + $("#divTest").val()); 
+         
+        alert("Text: " + $("#txtTest").text()); 
+        alert("HTML: " + $("#txtTest").html()); 
+        alert("Value: " + $("#txtTest").val()); 
+}); 
+</script>
+</head>
+<body>
+<div id="divTest"> 
+        <b>Test</b> 
+        <input type="text" id="txtTest" name="txtTest" value="Input field" /> 
+</div> 
+</body>
+</html>

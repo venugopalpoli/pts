@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>JQuery</title>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+<script type="text/javascript"> 
+function InsertElements() 
+{ 
+        var element1 = $("<b></b>").text("Hello "); 
+        var element2 = "<i>there </i>"; 
+        var element3 = document.createElement("u"); 
+        element3.innerHTML = "jQuery!"; 
+         
+        $("#spnTest2").after(element1, element2, element3); 
+} 
+</script>
+</head>
+<body>
+<a href="javascript:void(0);" onclick="InsertElements();">Insert elements</a> 
+<br /><br /> 
+<span id="spnTest2">Hello world? </span> 
+
+</body>
+</html>

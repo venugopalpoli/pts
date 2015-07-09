@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>JQuery</title>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+<script type="text/javascript"> 
+function InsertElementsBefore() 
+{        
+        $("#spnTest3").before($("<i></i>").text("before() ")); 
+        $("<b></b>").text("insertBefore() ").insertBefore("#spnTest3"); 
+} 
+</script>
+</head>
+<body>
+<a href="javascript:void(0);" onclick="InsertElementsBefore();">Insert elemenets</a> 
+<br /><br /> 
+<span id="spnTest3">Hello world? </span> 
+
+</body>
+</html>

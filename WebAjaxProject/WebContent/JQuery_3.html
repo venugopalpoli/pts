@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>JQuery</title>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+   <script type="text/javascript">
+   $(document).ready(function() {
+      $("#driver").click(function(event){
+          var name = $("#name").val();
+          $("#stage").load('result.jsp', {"name":name},function(responseTxt,statusTxt,xhr){
+        	    if(statusTxt=="success")
+        	        alert("External content loaded successfully!");
+        	      if(statusTxt=="error")
+        	        alert("Error: "+xhr.status+": "+xhr.statusText);
+        	    });
+      });
+   });
+   </script>
+</head>
+<body>
+   <p>Enter your name and click on the button:</p>
+   <input type="input" id="name" size="40"><br>
+   <div id="stage" style="background-color:lightblue;">
+          STAGE
+   </div>
+   <input type="button" id="driver" value="Show Result">
+</body>
+</html>
+ 

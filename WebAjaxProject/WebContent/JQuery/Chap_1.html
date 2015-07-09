@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>JQuery</title>
+
+<style>a.test {    font-weight: bold;}
+</style> 
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+<script>   
+   $( "a" ).addClass( "test" ); 
+
+	$( document ).ready(function() {        
+		$( "a" ).click(function( event ) {            
+			alert( "The link will no longer take you to jquery.com" );            
+			event.preventDefault();        
+		});    
+	});     
+</script>
+</head>
+<body>
+<a href="http://jquery.com/">jQuery</a>
+</body>
+</html>

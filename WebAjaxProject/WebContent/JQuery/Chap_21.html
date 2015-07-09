@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>JQuery</title>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+<script type="text/javascript"> 
+$(function() 
+{ 
+        $("#divText").text("A dynamically set text"); 
+        $("#divHtml").html("<b><i>A dynamically set HTML string</i></b>"); 
+        $("#txtTest").val("A dynamically set value"); 
+}); 
+</script>
+</head>
+<body>
+<div id="divText"></div> 
+<div id="divHtml"></div> 
+<input type="text" id="txtTest" name="txtTest" value="Input field" /> 
+</body>
+</html>

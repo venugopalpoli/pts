@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON AJAX</title>
+<script type="text/javascript">
+function loadAjax()
+{
+   var http_request = new XMLHttpRequest();
+   try{
+      // Opera 8.0+, Firefox, Chrome, Safari
+      http_request = new XMLHttpRequest();
+   }catch (e){
+      // Internet Explorer Browsers
+      try{
+         http_request = new ActiveXObject("Msxml2.XMLHTTP");
+      }catch (e) {
+         try{
+            http_request = new ActiveXObject("Microsoft.XMLHTTP");
+         }catch (e){
+            // Something went wrong
+            alert("Your browser broke!");
+            return false;
+         }
+      }
+   }
+   http_request.onreadystatechange  = function(){
+      if (http_request.readyState == 4  )
+      {
+        // Javascript function JSON.parse to parse JSON data
+        var xmlDoc = http_request.responseXML;
+        txt="<table><tr><th>TITLE</th><th>ARTIST</th><th>COUNTRY</th><th>COMPANY</th><th>PRICE</th><th>YEAR</th></tr>";
+        var title = xmlDoc.getElementsByTagName("TITLE");
+        var artist = xmlDoc.getElementsByTagName("ARTIST");
+        var country = xmlDoc.getElementsByTagName("COUNTRY");
+        var company = xmlDoc.getElementsByTagName("COMPANY");
+        var price = xmlDoc.getElementsByTagName("PRICE");
+        var year = xmlDoc.getElementsByTagName("YEAR");
+        for (i=0;i<title.length;i++)
+          {
+             getRow(title, artist, country, company, price, year);
+          }
+        txt = txt + "</table>"
+        document.getElementById("myDiv").innerHTML=txt;
+      }
+   }
+   http_request.open("GET", 'catalog.xml', true);
+   http_request.send();
+}
+
+function getRow(title, artist, country, company, price, year){
+    txt=txt + "<tr><td>" + title[i].childNodes[0].nodeValue + "</td>";
+    txt=txt + "<td>" + artist[i].childNodes[0].nodeValue + "</td>";
+    txt=txt + "<td>" + country[i].childNodes[0].nodeValue + "</td>";
+    txt=txt + "<td>" + company[i].childNodes[0].nodeValue + "</td>";
+    txt=txt + "<td>" + price[i].childNodes[0].nodeValue + "</td>";
+    txt=txt + "<td>" + year[i].childNodes[0].nodeValue + "</td></tr>";
+}
+</script>
+</head>
+<body>
+<div id="myDiv"></div>
+
+<div class="central">
+<button type="button" onclick="loadAjax()">Update Details</button>
+</div>
+</body>
+</html>
