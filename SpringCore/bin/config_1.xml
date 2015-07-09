@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- bean id="sampleVO" class="com.spring.core.SampleVO" init-method="init" destroy-method="destroy">
+    	<property name="message" value="Welcome"/>
+    </bean-->
+    
+    <bean id="sampleVO" class="com.spring.core.SampleVO" init-method="init" destroy-method="destroy">
+    	<property name="message" value="Welcome VO"/>
+    </bean>
+
+    <bean id="sampleVO1" class="com.spring.core.SampleVO1">
+    	<property name="message" value="Welcome VO1"/>
+    </bean>
+    
+    <bean class="com.spring.core.InitHelloWorld" />
+
+    </beans>
