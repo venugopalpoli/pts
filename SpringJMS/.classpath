@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SpringLib"/>
+	<classpathentry kind="lib" path="C:/java/JMS/jms.jar"/>
+	<classpathentry kind="lib" path="C:/java/JMS/connector.jar"/>
+	<classpathentry kind="lib" path="C:/java/JMS/javax.resource-api.jar"/>
+	<classpathentry kind="lib" path="C:/java/JMS/com.ibm.mq.jar"/>
+	<classpathentry kind="lib" path="jars/com.ibm.dhbcore.jar"/>
+	<classpathentry kind="lib" path="jars/com.ibm.mq.axis2.jar"/>
+	<classpathentry kind="lib" path="jars/com.ibm.mq.commonservices.jar"/>
+	<classpathentry kind="lib" path="jars/com.ibm.mq.headers.jar"/>
+	<classpathentry kind="lib" path="jars/com.ibm.mq.jar"/>
+	<classpathentry kind="lib" path="jars/com.ibm.mq.jmqi.jar"/>
+	<classpathentry kind="lib" path="jars/com.ibm.mq.jms.Nojndi.jar"/>
+	<classpathentry kind="lib" path="jars/com.ibm.mq.pcf.jar"/>
+	<classpathentry kind="lib" path="jars/com.ibm.mq.soap.jar"/>
+	<classpathentry kind="lib" path="jars/com.ibm.mq.tools.ras.jar"/>
+	<classpathentry kind="lib" path="jars/com.ibm.mqjms.jar"/>
+	<classpathentry kind="lib" path="jars/connector.jar"/>
+	<classpathentry kind="lib" path="jars/jms.jar"/>
+	<classpathentry kind="lib" path="jars/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="C:/java/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

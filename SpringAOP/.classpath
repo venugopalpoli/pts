@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/SpringLib"/>
+	<classpathentry exported="true" kind="lib" path="C:/java/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/java/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/java/CGLib/cglib-2.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/java/org.aspectj/aspectjrt/jars/aspectjrt-1.8.2.jar"/>
+	<classpathentry kind="lib" path="C:/java/org.aspectj/aspectjweaver/jars/aspectjweaver-1.8.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
