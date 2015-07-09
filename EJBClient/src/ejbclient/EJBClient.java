@@ -55,7 +55,7 @@ public class EJBClient {
            StudentSessionBeanRemote studentBean = (StudentSessionBeanRemote)ctx.lookup("StudentSessionBean/remote");
            
            Student student = new Student();
-           student.setLocation("Coventry");
+           student.setLocation("London");
            student.setName("Venu");
            
           // studentBean.addStudent(student);
