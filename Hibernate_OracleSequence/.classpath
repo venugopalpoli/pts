@@ -4,9 +4,5 @@
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/HibernateLib"/>
-	<classpathentry kind="lib" path="C:/java/mysql-connector-java-5.1.31.jar"/>
-	<classpathentry kind="lib" path="C:/java/ojdbc14.jar"/>
-	<classpathentry kind="lib" path="C:/java/slf4j-api-1.7.5.jar"/>
-	<classpathentry kind="lib" path="C:/java/ehcache-2.7.8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
